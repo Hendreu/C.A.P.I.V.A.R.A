@@ -12,7 +12,7 @@ def get_summary(transcript):
     forneça uma breve explicação seguida de subpontos relevantes com explicações detalhadas, e traduza essas explicações para o português. 
     Certifique-se de que o resumo aborde os temas centrais, os objetivos de aprendizagem e quaisquer termos técnicos discutidos. 
     Mantenha uma sequência lógica entre os tópicos e destaque as transições ou conexões feitas pelo palestrante entre os conceitos. 
-    Inclua marcações de tempo, se disponíveis, para facilitar a referência.
+    Inclua marcações de tempo, se disponíveis, para facilitar a referência. Caso não exista topicos ou não seja uma explicação, apenas transcreva o que foi dito
     
     """ + transcript
     response = model.generate_content(prompt)
