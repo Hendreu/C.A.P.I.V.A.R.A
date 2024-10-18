@@ -31,6 +31,18 @@ In addition to the listed libraries, you will need to configure the **Google API
 3. The `googleapikey.txt` file should contain only the API key on a single line.
 4. The key will be read and automatically configured in the code to communicate with the Google API.
 
+   Installation:
+    ```bash
+    pip install whisper gemini_summarize pytubefix google-generativeai
+    ```
+   Make sure FFMPEG is installed:
+      On Ubuntu/Debian
+      ```bash
+      sudo apt install ffmpeg
+      ```
+    - On Windows:
+      - Download FFMPEG and add it to the PATH. [FFMPEG](https://ffmpeg.org/download.html)
+
 
 # Projeto Capivara
 
