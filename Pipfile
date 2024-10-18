@@ -13,6 +13,9 @@ torch = "*"
 torchvision = "*"
 torchaudio = "*"
 ffmpeg = "*"
+pytube = "*"
+pytubefix = "*"
+yt = "*"
 
 [dev-packages]
 
