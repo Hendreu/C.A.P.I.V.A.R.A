@@ -8,12 +8,12 @@ with open('googleapikey.txt', 'r') as f:
     model = genai.GenerativeModel('gemini-pro')
 
 def get_summary(transcript):
-    prompt = """Resuma e organize o conteúdo em tópicos e subtópicos claros. Para cada tópico principal, 
-    forneça uma breve explicação seguida de subpontos relevantes com explicações detalhadas, e traduza essas explicações para o português. 
-    Certifique-se de que o resumo aborde os temas centrais, os objetivos de aprendizagem e quaisquer termos técnicos discutidos. 
-    Mantenha uma sequência lógica entre os tópicos e destaque as transições ou conexões feitas pelo palestrante entre os conceitos. 
-    Inclua marcações de tempo, se disponíveis, para facilitar a referência. Caso não exista topicos ou não seja uma explicação, apenas transcreva o que foi dito
-    
+    prompt = """Resuma e organize o conteúdo em tópicos e subtópicos claros, traduzindo o texto para português. 
+    Para cada tópico principal, forneça uma breve explicação seguida de subpontos detalhados. 
+    Certifique-se de abordar os temas centrais, os objetivos de aprendizagem e os termos técnicos discutidos. 
+    Mantenha uma sequência lógica entre os tópicos e destaque as transições ou conexões entre conceitos. Inclua marcações de tempo, se disponíveis, para facilitar a referência.
+    Se não houver tópicos ou explicações claras, transcreva o que foi dito. O texto final deve ser em português.
+
     """ + transcript
     response = model.generate_content(prompt)
     return response.text
