@@ -1,3 +1,36 @@
+# Capivara Project
+
+**Capivara** (Collection of Annotations and Integrated Spreadsheets for Visualization and Storage of Academic Records) is an open-source tool designed to transcribe and summarize YouTube videos. The project uses libraries like Whisper, Gemini Summarize, pytubefix, and Google Generative AI to process audio from videos and automatically provide summaries.
+
+## Features
+
+- Automatic transcription of YouTube videos.
+- Summarization of the transcribed video content.
+- Support for multiple transcription models via Whisper.
+- Automatic language detection.
+- Generation of organized summaries using Google Generative AI API.
+
+## Requirements
+
+- **Python 3.8+**
+- The following libraries must be installed:
+  - `whisper`
+  - `gemini_summarize`
+  - `pytubefix`
+  - `google-generativeai`
+- **FFMPEG** must be installed on your system to properly process audio files.
+
+### Additional Requirements
+
+In addition to the listed libraries, you will need to configure the **Google API** to use the **Gemini** generative model.
+
+### Steps to configure the Google API:
+
+1. Create or obtain a Google API key to access the **Google Generative AI** service. You can follow the quickstart guide [here](https://ai.google.dev/gemini-api/docs/quickstart?lang=python).
+2. Save the API key in a text file named `googleapikey.txt`.
+3. The `googleapikey.txt` file should contain only the API key on a single line.
+4. The key will be read and automatically configured in the code to communicate with the Google API.
+
 
 # Projeto Capivara
 
