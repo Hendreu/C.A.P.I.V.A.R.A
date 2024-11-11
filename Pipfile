@@ -16,6 +16,9 @@ ffmpeg = "*"
 pytube = "*"
 pytubefix = "*"
 yt = "*"
+pyautogui = "*"
+opencv-python = "*"
+pytesseract = "*"
 
 [dev-packages]
 
