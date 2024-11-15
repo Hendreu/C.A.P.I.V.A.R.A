@@ -16,7 +16,7 @@ def porPrint():
 
     transcription = convertImgToString
 
-    print(gemini_summarize.get_summary((transcription)))
+    print(gemini_summarize.getSummaryImgToText((transcription)))
 
     remove("print.jpg")
 
