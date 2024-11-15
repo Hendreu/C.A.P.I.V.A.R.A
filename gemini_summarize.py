@@ -16,4 +16,11 @@ def get_summary(transcript):
     response = model.generate_content(prompt)
     return response.text
 
-#def getSummaryImgToText():
+def getSummaryImgToText(transcript):
+        prompt = """Analise o texto enviado e determine se ele contém uma pergunta explícita.
+Se o texto NÃO contiver uma pergunta, resuma-o em até 30% do tamanho original, destacando apenas as informações mais relevantes e mantendo precisão e coerência.
+Se o texto contiver uma pergunta, ignore o processo de resumo e responda diretamente à questão formulada.
+Caso o texto seja ambíguo ou insuficiente para gerar um resumo ou resposta, peça ao usuário para reformulá-lo.
+    """ + transcript
+    response = model.generate_content(prompt)
+    return response.text
